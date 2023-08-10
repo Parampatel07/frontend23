@@ -10,3 +10,4 @@ p - paragraph
 div - div tag (for grouping tags )
 span - for group small text
 font - for applying font effect to text 
+img - for image 
