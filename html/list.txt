@@ -11,3 +11,12 @@ div - div tag (for grouping tags )
 span - for group small text
 font - for applying font effect to text 
 img - for image 
+hr - horizontal line 
+iframe - for youtube video 
+table - for table
+tr - for table row
+td - for table data (column)
+thead - for table headings
+tbody - for table body
+tfoot - for table footer
+th - inside thead/tfoot

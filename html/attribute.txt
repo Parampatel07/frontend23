@@ -1,0 +1,12 @@
+bgcolor - for background color
+colspan - for merge column
+rowspan - for merge row 
+height
+width
+size - for font size
+align - for aligment 
+cellpadding - for padding in table 
+color - for font color
+border - for table border 
+src - for image source
+alt - for optional text 
