@@ -10,3 +10,4 @@ color - for font color
 border - for table border 
 src - for image source
 alt - for optional text 
+targer ( _blank ) - for opening links in new tab 

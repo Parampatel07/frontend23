@@ -20,3 +20,7 @@ thead - for table headings
 tbody - for table body
 tfoot - for table footer
 th - inside thead/tfoot
+ol - ordered list
+ul - unordered list
+li - list item
+a - links
