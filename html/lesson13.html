@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Example of Inputs </title>
+</head>
+
+<body>
+     <h1 align="center">
+          Example of Input types
+     </h1>
+     <hr>
+     <form action="" method="post"> 
+          <table border="2" align="center" cellpadding="10" width="50%">
+               <tr align="center">
+                    <td colspan="2">
+                         <h2>
+                              Register Form
+                         </h2>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="name">Enter your name </label>
+                    </td>
+                    <td>
+                         <input type="text" name="user_name" id="name" required placeholder="Enter your name here ">
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="contact">Enter your Mobile number</label>
+                    </td>
+                    <td>
+                         <input type="number" name="contact" id="contact" required placeholder="Enter your mobile number here">
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="email">Enter your email address</label>
+                    </td>
+                    <td>
+                         <input type="email" name="email" id="email" required placeholder="Enter your email here ">
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="password">Enter your password</label>
+                    </td>
+                    <td>
+                         <input type="password" name="password" id="password" required placeholder="Enter your password">
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="dob">Enter your date of birth</label>
+                    </td>
+                    <td>
+                         <input type="date" name="dob" id="dob" required>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="gender">Select your gender</label>
+                    </td>
+                    <td>
+                         <input type="radio" name="gender" value="1">Male
+                         <input type="radio" name="gender" value="0">Female
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="hobbies">Select your Hobbies</label>
+                    </td>
+                    <td>
+                         <input type="checkbox" name="hobbies" value="1">Cricket
+                         <input type="checkbox" name="hobbies" value="2">Hockey
+                         <input type="checkbox" name="hobbies" value="3">Coding 
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="city">Select Your City</label>
+                    </td>
+                    <td>
+                         <select name="city" id="">
+                              <option value="1">Ahmedabad</option>
+                              <option value="2">Surat</option>
+                              <option value="3">Pune</option>
+                         </select>
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="address">Enter your address</label>
+                    </td>
+                    <td>
+                         <textarea name="address" id="" cols="30" rows="2"></textarea>
+                    </td>
+               </tr>
+               <tr>
+                    <td colspan="2" align="center">
+                         <input type="submit" value="Register Now">
+                         <input type="reset" value="Clear all">
+                    </td>
+               </tr>
+              
+          </table>
+     </form>
+</body>
+
+</html>
