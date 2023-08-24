@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Input tags</title>
+</head>
+
+<body>
+     <h1 align="center">Input tags in html</h1>
+     <hr />
+     <form action="lesson10.html" method="post">
+          <table border="2" cellpadding="10" width="50%" align="center">
+               <tr>
+                    <td colspan="2" align="center">Login</td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="email">Enter your email </label>
+                    </td>
+                    <td>
+                         <input type="email" name="email" id="email" placeholder="Email goes here" required autofocus />
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="txtpassword">Enter your password</label>
+                    </td>
+                    <td>
+                         <input type="password" name="password" id="txtpassword" placeholder="Atleast 8 digit"
+                              required />
+                    </td>
+               </tr>
+               <tr>
+                    <td>
+                         <label for="mobilenumber">Enter your Phone number </label>
+                    </td>
+                    <td>
+                         <input type="tel" name="number" id="mobilenumber"
+                              placeholder="Enter phone number in indian Standard " pattern="[789][0-9]{9}" required />
+                    </td>
+               </tr>
+               <tr>
+                    <td colspan="2" align="center">
+                         <input type="submit" value="Login Here" />
+                         <!-- <input type="submit" value="Login" formaction="lesson11.html" /> -->
+                         <!-- <input type="submit" value="Login Later" formaction="lesson17.html" /> -->
+                    </td>
+               </tr>
+          </table>
+     </form>
+</body>
+
+</html>
