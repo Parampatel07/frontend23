@@ -1,65 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson 1</title>
+    <title>exercise</title>
     <style>
-        body {
-            background-color: aqua;
-            border: 4px solid black;
-        }
-
-        p {
-            font-size: 25px;
-            background-color: rgb(219, 219, 59);
-            border: 4px solid black;
-            margin: 30px;
-            padding: 20px;
-        }
-
-        #third3 {
-            background-color: pink;
-        }
-
-        span {
-            border: 4px solid black;
-            background-color: violet;
-        }
-
-        #heading {
-            border: 4px solid black;
-            background-color: rgb(219, 219, 59);
+        nav
+        {
             padding: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            border: 2px solid black;
+            background-color: rgb(255, 153, 204);
+        }
+        body
+        {
+            border: 5px solid black;
+            padding: 10px;
+            margin: 5px;
+            background-color: rgb(67, 255, 155);
+        }
+       #table2
+        {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 30px; 
+        }
+        .heading
+        {
+            border: 2px solid black;
+            width: 50%;
+            padding: 10px;
+            margin: 10px;  
+            background-color: rgb(175, 175, 255); 
+        }
+        .paragraph
+        {
+            border: 2px solid black;
+            padding: 10px;
+            margin: 20px;  
+            background-color: rgb(232, 134, 154); 
         }
     </style>
 </head>
-
 <body>
-    <h1 align="center">
-        <span id="heading">Lorem ipsum dolor sit amet.</span>
-    </h1>
-    <hr>
-    <p>
-        <span> 1. </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste nostrum dignissimos quam
-        reprehenderit, accusantium eveniet repudiandae tempora fuga amet temporibus velit, molestias delectus?
-        Consequatur dolore quasi incidunt amet quas, adipisci nostrum repellat vitae voluptatem ipsam, quisquam atque
-        iusto, pariatur numquam?
-    </p>
-    <p>
-        <span>2. </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero quo ipsa eligendi minus
-        doloribus nisi perferendis, repellendus natus aliquid eum aperiam delectus nam! Molestias soluta eos eligendi
-        suscipit. Suscipit velit dolores fugiat, nulla consequuntur minima, sequi blanditiis sit eveniet necessitatibus
-        mollitia dolor perferendis officiis quasi. Quisquam, odit! Rem, incidunt beatae.
-    </p>
-    <p id="third3">
-        <span>3. </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed hic mollitia soluta facere
-        repudiandae ipsa voluptatem dolore reiciendis! Voluptatum ipsam harum et voluptates dignissimos expedita
-        accusantium placeat quis consequuntur odio, velit atque rerum veritatis tempora error tenetur ratione cumque
-        deserunt ipsa assumenda reprehenderit impedit, eum, praesentium nulla. Eligendi voluptate soluta suscipit ipsa
-        veniam ad debitis dicta, aperiam molestias quis natus?
-    </p>
+   <nav>
+    
+    <ul>
+        <a class="heading" href="#">logo</a>
+        <a class="heading" href="#">Home</a>
+        <a class="heading"href="#">About</a>
+        <a class="heading"href="#"> Link 1</a>
+        <a class="heading"href="#"> contact</a>
+    </ul>
+   </nav>
+   <table id="table2">
+    <tr>
+        <td >
+            <h1 class="heading">Lorem ipsum dolor </h1>
+        </td>
+        <td>
+            <h1 class="heading">Lorem ipsum dolor</h1>
+        </td>
+        <tr >
+        <td>
+            <p class="paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur eaque accusantium at, inventore suscipit, asperiores dolorem delectus harum sequi cum eos labore nemo iste!
+            </p>
+        </td>
+        <td>
+            <p class="paragraph">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi tenetur eaque accusantium at, inventore suscipit, asperiores dolorem delectus harum sequi cum eos labore nemo iste!
+            </p>
+        </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <img src="../html/images/image8.jpg" height="200px" alt="">
+            </td>
+            <td align="center">
+                <img src="../html/images/image8.jpg" height="200px" alt="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores possimus dolorem quos, facilis nostrum iusto consequuntur eligendi iste necessitatibus maxime corrupti mollitia illum minima deleniti!</p>
+            </td>
+            <td>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores possimus dolorem quos, facilis nostrum iusto consequuntur eligendi iste necessitatibus maxime corrupti mollitia illum minima deleniti!</p>
+            </td>
+        </tr>
+    </tr>
+   </table>
 </body>
-
 </html>
