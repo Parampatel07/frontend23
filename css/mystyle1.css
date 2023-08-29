@@ -1,0 +1,25 @@
+p {
+     font-size: 1.6rem;
+     background-color: rgb(180, 180, 251);
+     padding: 30px;
+     margin: 35px;
+}
+
+a:visited {
+     color: red;
+}
+
+a:link {
+     color: green;
+}
+
+a:active {
+     color: darkgoldenrod;
+}
+
+p:hover {
+     -webkit-box-shadow: -31px 33px 29px 3px rgba(59, 42, 59, 0.84);
+     -moz-box-shadow: -31px 33px 29px 3px rgba(59, 42, 59, 0.84);
+     box-shadow: -31px 33px 29px 3px rgba(59, 42, 59, 0.84);
+     background-color: rgb(156, 250, 156);
+}
