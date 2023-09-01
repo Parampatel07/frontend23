@@ -1,0 +1,13 @@
+p
+{
+     font-size: 1.5rem;
+     background-color: rgb(225, 193, 255);
+     padding: 35px;
+     margin-left: 35px;
+     margin-right: 35px;
+}
+#parent_div
+{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+}

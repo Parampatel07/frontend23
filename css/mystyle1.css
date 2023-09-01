@@ -4,19 +4,15 @@ p {
      padding: 30px;
      margin: 35px;
 }
-
 a:visited {
      color: red;
 }
-
 a:link {
      color: green;
 }
-
 a:active {
      color: darkgoldenrod;
 }
-
 p:hover {
      -webkit-box-shadow: -31px 33px 29px 3px rgba(59, 42, 59, 0.84);
      -moz-box-shadow: -31px 33px 29px 3px rgba(59, 42, 59, 0.84);
