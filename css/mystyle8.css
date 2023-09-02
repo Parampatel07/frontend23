@@ -1,0 +1,235 @@
+* {
+     margin: 0px;
+     padding: 0px;
+}
+
+body {
+     background-color: #191825;
+     color: #FBFBFB;
+     font-family: 'Poppins', sans-serif;
+}
+
+#nav {
+     display: flex;
+     justify-content: space-between;
+}
+
+#my_logo {
+     height: 55px;
+}
+
+#logo {
+     padding: 10px;
+     padding-left: 30px;
+     padding-top: 20px;
+     font-family: 'Courgette', cursive;
+     font-size: 1.8rem;
+     display: flex;
+}
+
+a:link,
+a:visited {
+     color: #FBFBFB;
+     text-decoration: none;
+}
+
+#links {
+     padding: 35px;
+     display: flex;
+     gap: 65px;
+     font-family: 'Courgette', cursive;
+     font-size: 1.4rem;
+}
+
+#logo_text {
+     margin-top: 10px;
+}
+
+#logo_text:hover {
+     color: #EA3D3D;
+}
+
+a:hover {
+     color: #EA3D3D;
+}
+
+#banner_div {
+     background-image: url('../css/images/banner3.jpg');
+     height: 545px;
+     width: 100%;
+     background-color: #EA3D3D;
+     background-size: cover;
+}
+
+.about_image {
+     height: 100%;
+     width: 100%;
+     border-radius: 25px;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#about_image_container {
+     width: 550px;
+     margin-left: 35px;
+}
+
+#about_us {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     margin-top: 75px;
+     margin-bottom: 75px;
+     padding: 40px;
+     background-image: url('../css/images/Terror!.png');
+     background-size: 650px 400px;
+}
+
+#about_text {
+     font-size: 1.1rem;
+
+}
+
+h2 {
+     font-family: 'Courgette', cursive;
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+}
+
+#games {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     padding: 50px;
+     gap: 25px;
+}
+
+#games>div {
+     background-color: #191825;
+     padding: 10px;
+     justify-content: center;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+#games>div:hover {
+     background-color: black;
+     box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+     transform: scale(1.2);
+     transition: all 1.6s ease;
+}
+
+#games>div>img {
+     width: 275px;
+     height: 250px;
+     object-fit: cover;
+}
+
+#offers {
+     padding: 50px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 50px;
+}
+
+.coupons {
+     padding: 20px;
+     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+     background-color: #14131d;
+}
+
+.coupons>div {
+     display: flex;
+}
+
+.coupons>div>img {
+     width: 150px;
+     height: 150px;
+     margin-right: 50px;
+}
+
+h4 {
+     font-family: 'Courgette', cursive;
+     font-size: 1.7rem;
+}
+#contact_us
+{
+     height: 450px;
+     width: 100%;
+     margin-top: 50px;
+     margin-bottom: 50px;
+}
+.contact_us_image
+{
+     height: 450px;
+     width: 100%;
+     opacity: 0.7;
+}
+#form
+{
+     background: rgb(2,0,36);
+     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(227,227,235,1) 0%, rgba(197,178,215,1) 100%);      padding: 50px;
+     width: 33%;
+     position: absolute;
+     margin-top: -410px;
+     left: 410px;
+     color: #14131d;
+}
+input
+{
+     height: 35px;
+     width: 100%;
+     margin-bottom: 25px;
+}
+
+#footer
+{
+     position: relative;
+     bottom: 0px;
+     background-color: #14131d;
+     padding: 25px;
+     
+}
+
+/* CSS */
+.button-6 {
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  margin-top: 20px;
+}
+
+.button-6:hover,
+.button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-6:hover {
+  transform: translateY(-1px);
+}
+
+.button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}

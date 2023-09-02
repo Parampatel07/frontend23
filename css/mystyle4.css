@@ -1,25 +1,24 @@
-*
-{
+* {
      margin: 0px;
      padding: 0px;
 }
-#logo
-{
+
+#logo {
      height: 60px;
 }
-#logo_text
-{
+
+#logo_text {
      font-size: 40px;
      margin-top: 9px;
      font-family: 'Satisfy', cursive;
      margin-left: -12px;
 }
-#logo_div
-{
+
+#logo_div {
      display: flex;
 }
-#nav
-{
+
+#nav {
      background-color: #F46E3A;
      padding: 10px;
 }
