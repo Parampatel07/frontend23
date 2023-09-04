@@ -21,4 +21,64 @@
 #nav {
      background-color: #F46E3A;
      padding: 10px;
+     display: flex;
+     justify-content: space-between;
+}
+
+#links {
+     display: flex;
+     margin-top: 20px;
+     justify-content: space-evenly;
+     font-size: 1.7rem;
+     width: 650px;
+     font-family: 'Lobster', cursive;
+}
+a:link
+{
+     text-decoration: none;
+     color: black;
+}
+a:visited
+{
+     color: black;
+}
+#banner
+{
+     height: 500px;
+     /* background-color: red; */
+     background-image: url('../images/banner1.jpg');
+     background-repeat: no-repeat;
+     background-size: cover ;
+}
+
+#heading
+{
+     margin-top: 45px;
+     font-size: 3rem;
+     font-family: 'Lobster', cursive;
+}
+
+#about_div
+{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 15px;
+     margin-top: 30px;
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.3rem;
+}
+
+#about_us
+{
+     margin-left: 100px;
+     margin-right: 100px;
+     margin-bottom: 1000px;
+}
+
+#about_div>img
+{
+     width: 454px;
+     height: 359px;
+     border-radius: 30px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
