@@ -51,7 +51,7 @@ a:visited
      background-size: cover ;
 }
 
-#heading
+.heading
 {
      margin-top: 45px;
      font-size: 3rem;
@@ -72,7 +72,7 @@ a:visited
 {
      margin-left: 100px;
      margin-right: 100px;
-     margin-bottom: 1000px;
+     margin-bottom: 70px;
 }
 
 #about_div>img
@@ -81,4 +81,40 @@ a:visited
      height: 359px;
      border-radius: 30px;
      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+#products
+{
+     background-color: #415778;
+     height: 650px;
+}
+.p_head
+{
+     color: #fbf9ee;
+     padding-top: 45px;
+}
+#products_div
+{
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 35px;
+     margin-right: 45px;
+     margin-left: 45px;
+     margin-top:35px ;
+}
+.single_product
+{
+     background-color: #fbf9ee;
+     padding: 45px;
+}
+.single_product>div>img
+{
+     width: 100%;
+     height: 200px;
+     border-radius: 25px;
+}
+.single_product>p
+{
+     padding-top: 25px;
+     font-family: 'Poppins', sans-serif;
+     font-size: 0.9rem;
 }
