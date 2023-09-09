@@ -33,33 +33,31 @@
      width: 650px;
      font-family: 'Lobster', cursive;
 }
-a:link
-{
+
+a:link {
      text-decoration: none;
      color: black;
 }
-a:visited
-{
+
+a:visited {
      color: black;
 }
-#banner
-{
+
+#banner {
      height: 500px;
      /* background-color: red; */
      background-image: url('../images/banner1.jpg');
      background-repeat: no-repeat;
-     background-size: cover ;
+     background-size: cover;
 }
 
-.heading
-{
+.heading {
      margin-top: 45px;
      font-size: 3rem;
      font-family: 'Lobster', cursive;
 }
 
-#about_div
-{
+#about_div {
      display: grid;
      grid-template-columns: 1fr 1fr;
      gap: 15px;
@@ -68,53 +66,164 @@ a:visited
      font-size: 1.3rem;
 }
 
-#about_us
-{
+#about_us {
      margin-left: 100px;
      margin-right: 100px;
      margin-bottom: 70px;
 }
 
-#about_div>img
-{
+#about_div>img {
      width: 454px;
      height: 359px;
      border-radius: 30px;
      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
-#products
-{
+
+#products {
      background-color: #415778;
      height: 650px;
 }
-.p_head
-{
+
+.p_head {
      color: #fbf9ee;
      padding-top: 45px;
 }
-#products_div
-{
+
+#products_div {
      display: grid;
      grid-template-columns: 1fr 1fr 1fr;
      gap: 35px;
      margin-right: 45px;
      margin-left: 45px;
-     margin-top:35px ;
+     margin-top: 35px;
 }
-.single_product
-{
+
+.single_product {
      background-color: #fbf9ee;
      padding: 45px;
 }
-.single_product>div>img
-{
+
+.single_product>div>img {
      width: 100%;
      height: 200px;
      border-radius: 25px;
 }
-.single_product>p
-{
+
+.single_product>p {
      padding-top: 25px;
      font-family: 'Poppins', sans-serif;
      font-size: 0.9rem;
+}
+
+#offers_div {
+     display: flex;
+     margin-left: 65px;
+     margin-right: 65px;
+     margin-top: 45px;
+     margin-bottom: 45px;
+     gap: 45px;
+}
+
+.single_offer {
+     display: flex;
+     background-color: #415778;
+     gap: 45px;
+     padding: 25px;
+     font-size: 2.5rem;
+     width: 100%;
+     font-family: 'Lobster', cursive;
+     color: #fbf9ee;
+}
+
+.single_offer>p {
+     margin-top: 35px;
+}
+
+.single_offer:hover {
+     box-shadow: rgba(60, 64, 67, 0.3) 0px 10px 20px 10px, rgba(60, 64, 67, 0.15) 10px 20px 60px 20px;
+}
+
+/* parallex styles  */
+.parallax {
+     /* The image used */
+     background-image: url("../images/background_img1.jpg");
+
+     /* Set a specific height */
+     min-height: 250px;
+
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+/* Styling the content sections */
+.content {
+     text-align: center;
+     padding: 35px 0;
+}
+
+.content h2 {
+     font-size: 36px;
+     color: #333;
+}
+
+.content p {
+     font-size: 18px;
+     color: #666;
+     margin: 20px 0;
+}
+
+/* Styling the contact cards */
+.contact-card {
+     background-color: #fff;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     padding: 20px;
+     border-radius: 10px;
+     margin: 20px;
+     /* display: inline-block; */
+     /* width: calc(33.33% - 40px); */
+     text-align: center;
+}
+
+.contact-card h3 {
+     font-size: 24px;
+     margin: 0;
+}
+
+.contact-card p {
+     font-size: 1.4rem;
+     margin: 10px 0;
+}
+
+.container {
+     width: 100%;
+     /* height: 100vh; */
+     overflow: hidden;
+     position: relative;
+}
+
+#contact_card {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     margin-top: 35px;
+     margin-left: 45px;
+     margin-right: 45px;
+}
+
+#map {
+     width: 100%;
+     height: 450px;
+}
+
+#my_map_section {
+     padding: 45px;
+}
+
+#footer {
+     padding: 30px;
+     background-color: #F46E3A;
+     font-family: 'Poppins', sans-serif;
+     font-size: 1.4rem;
 }
