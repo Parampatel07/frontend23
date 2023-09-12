@@ -8,6 +8,8 @@
      <title>Products </title>
      <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins&family=Satisfy&display=swap"
           rel="stylesheet">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
      <link rel="stylesheet" href="mystyle4.css">
 </head>
 
@@ -20,10 +22,10 @@
                </span>
           </div>
           <div id="links">
-               <a href="">Home</a>
-               <a href="#about_us">About Us </a>
-               <a href="#products">Products </a>
-               <a href="#contact_us">Contact Us</a>
+               <a class="animate__animated animate__fadeInTopLeft" href="">Home</a>
+               <a class="animate__animated animate__fadeInTopLeft" href="#about_us">About Us </a>
+               <a class="animate__animated animate__fadeInTopLeft" href="#products">Products </a>
+               <a class="animate__animated animate__fadeInTopLeft" href="#contact_us">Contact Us</a>
           </div>
      </nav>
      <section id="banner">
@@ -33,8 +35,8 @@
                About us
           </h1>
           <div id="about_div">
-               <img src="../images/about_us.png" alt="">
-               <p>
+               <img src="../images/about_us.png" data-aos="fade-down" data-aos-duration="3000" alt="">
+               <p data-aos="fade-up" data-aos-duration="3000" >
                     Welcome to Shopping Basket ! We are your premier destination for the latest trends,
                     style inspiration, and curated fashion collections. Our passion for fashion drives us to deliver a
                     seamless shopping experience, offering an extensive range of clothing, footwear, and accessories for
@@ -52,7 +54,7 @@
           </h1>
 
           <div id="products_div">
-               <div class="single_product">
+               <div class="single_product" data-aos="flip-up" data-aos-duration="3000">
                     <div align="center">
                          <img src="../images/product1.jpg" alt="">
                     </div>
@@ -63,7 +65,7 @@
                     </p>
                </div>
 
-               <div class="single_product">
+               <div class="single_product" data-aos="flip-up" data-aos-duration="3000">
                     <div align="center">
                          <img src="../images/product2.jpg" alt="">
                     </div>
@@ -74,7 +76,7 @@
                     </p>
                </div>
 
-               <div class="single_product">
+               <div class="single_product" data-aos="flip-up"  data-aos-duration="3000">
                     <div align="center">
                          <img src="../images/product4.png" alt="">
                     </div>
@@ -87,17 +89,17 @@
           </div>
      </section>
      <section id="offers">
-          <h1 align="center" class="heading ">
+          <h1 align="center" class="heading " data-aos="zoom-in-up" data-aos-duration="3000">
                Our Offers
           </h1>
           <div id="offers_div">
-               <div class="single_offer">
+               <div class="single_offer" data-aos="zoom-in-up" data-aos-duration="3000">
                     <img src="../images/discount3.png" alt="">
                     <p>
                          20 % off on Shoes
                     </p>
                </div>
-               <div class="single_offer">
+               <div class="single_offer" data-aos="zoom-in-up" data-aos-duration="3000">
                     <img src="../images/discount2.png" alt="">
                     <p>
                          50 % off on Coats
@@ -110,19 +112,19 @@
                <div class="parallax-bg"></div>
           </div>
           <div id="contact_card">
-               <div class="contact-card" align="center">
+               <div class="contact-card" align="center" data-aos="flip-left"  data-aos-duration="1000">
                     <img src="../images/email.png" alt="">
                     <h3>Email</h3>
                     <p>Email: contact@example.com</p>
                </div>
 
-               <div class="contact-card">
+               <div class="contact-card" data-aos="flip-left"  data-aos-duration="2000">
                     <img src="../images/location-pin.png" alt="">
                     <h3>Location</h3>
                     <p>Address: abc plot , xyz area , lmo city ,pqr , 000000</p>
                </div>
 
-               <div class="contact-card">
+               <div class="contact-card" data-aos="flip-left"  data-aos-duration="3000">
                     <img src="../images/smartphone.png" alt="">
                     <h3>Contact Detail</h3>
                     <p>Phone: +1 (123) 456-7890</p>
@@ -144,6 +146,10 @@
                </p>
           </a>
      </section>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+          AOS.init();
+     </script>
 </body>
 
 </html>
