@@ -1,0 +1,5 @@
+SELECT Version() sql_version ,CURRENT_DATE , CURRENT_TIME; 
+
+SElect now() now; 
+
+SHOW DATABASES; 
