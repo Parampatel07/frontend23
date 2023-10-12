@@ -1,1 +1,3 @@
-Create a gallary using all html tags learnt till now 
+Write a programe to findout wether the given number is odd or even 
+
+Write a programe to findout wether the given year is millineum year or not 
