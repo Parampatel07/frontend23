@@ -1,3 +1,5 @@
 Write a programe to findout wether the given number is odd or even 
 
 Write a programe to findout wether the given year is millineum year or not 
+
+Write a programe to findout how many days given month has take month in int 
