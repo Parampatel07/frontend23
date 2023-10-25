@@ -1,1 +1,11 @@
 Create a gallary using all html tags learnt till now 
+
+JAVASCRIPT
+--------------------------------------------
+1) Write a programe to findout area of cylinder 
+
+2) Write a programe to findout simple intrest 
+
+3) Write a programe to findout area of reactangle 
+
+4) Write a programe to take user's name as input print "hello i am name "
