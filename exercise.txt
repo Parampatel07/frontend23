@@ -10,10 +10,7 @@ JAVASCRIPT
 3) Write a programe to findout area of reactangle 
 
 4) Write a programe to take user's name as input print "hello i am name "
-=======
-Write a programe to findout wether the given number is odd or even 
 
-Write a programe to findout wether the given year is millineum year or not 
+5) Write a programe to findout wether the given number is odd or even 
 
-Write a programe to findout how many days given month has take month in int 
->>>>>>> 2bdd7a1b7f84bb048b1a8d12c36869a7a4cf34c4
+6) Write a programe to findout how many days given month has take month in int 
