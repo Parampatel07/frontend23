@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Create a gallary using all html tags learnt till now 
 
 JAVASCRIPT
@@ -14,3 +13,7 @@ JAVASCRIPT
 5) Write a programe to findout wether the given number is odd or even 
 
 6) Write a programe to findout how many days given month has take month in int 
+
+7)Write a programe to findout wether the given year is millineum year or not using ternary operator 
+
+8)Write a programe to findout wether the given value is alphabet or digit 
