@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+          // 8)Write a programe to findout wether the given value is alphabet or digit
+          var name = "Param ";
+          var age = 19;
+          var gender = "Male";
+
+          console.log("My Name is " + name + " My age is " + age + " My gender is " + gender);
+          console.log(`My Name is ${name} My age is ${age} My gender is ${gender}`);
+
+          var data = parseInt(prompt("Enter any value "));
+          console.log("The value of data is " + data);
+
+          var answer = Number.isInteger(data);
+          console.log("The value of answer is " + answer);
+
+          if (answer == true) {
+               alert("It is Digit ");
+          }
+          else {
+               alert("It is not Digit ");
+          }
+     </script>
+</body>
+
+</html>
