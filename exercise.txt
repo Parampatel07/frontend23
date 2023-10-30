@@ -17,3 +17,10 @@ JAVASCRIPT
 7)Write a programe to findout wether the given year is millineum year or not using ternary operator 
 
 8)Write a programe to findout wether the given value is alphabet or digit
+
+9)Write a programe to print inverted half pyramid 
+->https://i1.faceprep.in/fp/articles/img/46684_1580817324.png
+
+10)Write a programe to findout Wether the user is eligible for voting or not (in h1 tag)
+->if eligible display in green color
+->if not eligible display in red color

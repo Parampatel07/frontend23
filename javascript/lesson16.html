@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <h1 align="center">
+          Welcome to <span id="language_name">Javascript</span>
+     </h1>
+
+     <table border="2" align="center" width="50%" cellpadding="5">
+          <thead>
+               <th>Name</th>
+               <th>Age</th>
+               <th>Roll no</th>
+          </thead>
+          <tbody>
+               <tr>
+                    <td id="name"></td>
+                    <td id="age"></td>
+                    <td id="roll_no"></td>
+               </tr>
+          </tbody>
+     </table>
+
+     <script>
+          var language_name = prompt("Enter name of language ");
+          document.getElementById("language_name").innerHTML = language_name;
+          var name = prompt("Enter your name ");
+          var age = prompt("Enter your age ");
+          var roll_no = prompt("Enter your roll_no ");
+          document.getElementById("name").innerHTML = name;
+          document.getElementById("age").innerHTML = age;
+          document.getElementById("roll_no").innerHTML = roll_no;
+     </script>
+</body>
+
+</html>
