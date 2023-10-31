@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <span id="message">
+          
+     </span>
+
+     <script>
+          // 10)Write a programe to findout Wether the user is eligible for voting or not (in h1 tag)
+          // ->if eligible display in green color
+          // ->if not eligible display in red color
+          var age = parseInt(prompt("Enter your age "));
+          var message = '';
+          console.log("the value of age is " + age);
+
+          if (age >= 18) {
+               message = `<span style="color: green;">you are eligible </span>`
+               document.getElementById("message").innerHTML = message;
+               console.log("you are eligible ");
+          }
+          else {
+               message = `<span style="color: red;">you are not eligible </span>`
+               document.getElementById("message").innerHTML = message;
+               console.log("You are not eligible ");
+          }
+     </script>
+</body>
+
+</html>
