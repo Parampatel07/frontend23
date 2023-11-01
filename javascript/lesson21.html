@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+          .child_div {
+               height: 100px;
+               width: 100px;
+               background-color: rgb(255, 201, 201);
+          }
+
+          #parent_div,
+          .btn-group {
+               margin-bottom: 50px;
+               display: flex;
+               justify-content: space-around;
+          }
+     </style>
+</head>
+
+<body>
+
+     <section id="parent_div">
+          <div class="child_div" style="background-color: rgb(255, 201, 201);"></div>
+          <div class="child_div" style="background-color: rgb(255, 201, 201);"></div>
+          <div class="child_div" style="background-color: rgb(255, 201, 201);"></div>
+     </section>
+
+     <div class="btn-group">
+          <button id="blue" onclick="getBlue()">Blue</button>
+          <button id="green" onclick="getGreen()">Green</button>
+          <button id="black" onclick="getBlack()">Black</button>
+     </div>
+
+     <script>
+          // Write a programe to create color changer based on document object 
+
+          function getBlue() {
+               document.getElementById("parent_div").innerHTML = `  <div class="child_div" style="background-color: blue;"></div>
+          <div class="child_div" style="background-color: blue;"></div>
+          <div class="child_div" style="background-color: blue;"></div>`;
+          }
+
+          function getGreen() {
+               document.getElementById("parent_div").innerHTML = `  <div class="child_div" style="background-color: green;"></div>
+          <div class="child_div" style="background-color: green;"></div>
+          <div class="child_div" style="background-color: green;"></div>`;
+          }
+
+          function getBlack() {
+               document.getElementById("parent_div").innerHTML = `  <div class="child_div" style="background-color: black;"></div>
+          <div class="child_div" style="background-color: black;"></div>
+          <div class="child_div" style="background-color: black;"></div>`;
+          }
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <div id="content">
+
+     </div>
+     <script>
+          // Write a programe to generate a table using javascript accept rows and colum from user 
+          var column = parseInt(prompt("Enter value of column "));
+          var row = parseInt(prompt("Enter value of row "));
+          var table = ``;
+          var tr = ``;
+          var td = ``;
+          var count = 0
+          console.log(`The value of column is ${column} and row is ${row}`);
+          while (count < column) {
+               td = td + `<td>*</td>`
+               count++;
+          }
+          count = 0;
+          while (count < row) {
+               tr = tr + `<tr>${td}</tr>`;
+               count++;
+          }
+          table = ` <table border="2" align="center" cellpadding="5" width="50%">${tr}</table>`;
+          document.getElementById("content").innerHTML = table;
+          console.log(table);
+          console.log(tr);
+          console.log(td);
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap demo</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+     <div class="container">
+          <div class="row mt-5">
+               <div class="offset-2 col-8 mt-5">
+                    <div class="card">
+                         <div class="card-header text-bg-success h1">
+                              Example of Clac
+                         </div>
+                         <div class="card-body">
+                              <div class="form-group my-4">
+                                   <label for="" class="form-label">Enter number 1 </label>
+                                   <input type="number" class="form-control" name="number1"
+                                        placeholder="Enter value of number1 " id="number1">
+                              </div>
+                              <div class="form-group my-4">
+                                   <label for="" class="form-label">Enter number 2 </label>
+                                   <input type="number" class="form-control" name="number2"
+                                        placeholder="Enter value of number2 " id="number2">
+                              </div>
+                              <div class="form-group mt-2">
+                                   <input type="number" name="answer" readonly class="form-control"
+                                        placeholder="Answer Goes here" id="answer">
+                              </div>
+                              <div class="row mt-4">
+                                   <div class="col-3 d-grid">
+                                        <button class="btn btn-success " onclick="getAdd()">Addition</button>
+                                   </div>
+                                   <div class="col-3 d-grid">
+                                        <button class="btn btn-success ">Subraction</button>
+                                   </div>
+                                   <div class="col-3 d-grid">
+                                        <button class="btn btn-success ">Multiplication</button>
+                                   </div>
+                                   <div class="col-3 d-grid">
+                                        <button class="btn btn-success ">Division</button>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+     <script>
+          function getAdd() {
+               var number1 = parseInt(document.getElementById("number1").value);
+               var number2 = parseInt(document.getElementById("number2").value);
+               console.log("The value of number 1 is " + number1 + " the value of number 2 is " + number2);
+               document.getElementById("answer").value = number1 + number2;
+          }
+     </script>
+</body>
+
+</html>
