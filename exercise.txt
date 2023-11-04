@@ -33,3 +33,10 @@ Write a programe to findout how many even number and odd numbers are there in ar
 Create a mutliplication table generator 
 start end
 5 10
+
+Write a programe to create a toggle button 
+
+Write a programe to create a result generator
+name , math , science , english , 
+-> total , average 
+if total less than 150 color red else green 
