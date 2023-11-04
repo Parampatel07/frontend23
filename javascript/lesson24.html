@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <h1 align="center">
+          Example of For each Loop
+     </h1>
+     <hr>
+     <script>
+          // Example of For each Loop
+          // Write a to findout how many even number and odd numbers are there in array 
+
+          var numbers = [12, 653, 02, 5, 95, 612, 548, 42, 03569, 5, 12, 56, 8, 46, 5, 2, 022];
+          var even_count = 0;
+          var odd_count = 0;
+          numbers.forEach((value) => {
+               if (value % 2 == 0) {
+                    even_count += 1;
+               }
+               else {
+                    odd_count += 1;
+               }
+          });
+
+          console.log(`Total even numbers are ${even_count} and total odd number are ${odd_count}`);
+     </script>
+</body>
+
+</html>

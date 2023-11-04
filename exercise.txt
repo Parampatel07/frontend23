@@ -24,3 +24,12 @@ JAVASCRIPT
 10)Write a programe to findout Wether the user is eligible for voting or not (in h1 tag)
 ->if eligible display in green color
 ->if not eligible display in red color
+
+Write a programe to findout how many even number and odd numbers are there in array and also display seprate array for even and odd number 
+[12, 653, 02, 5, 95, 612, 548, 42, 03569, 5, 12, 56, 8, 46, 5, 2, 022];    
+[653,5,95]
+[12,02,612,548]
+
+Create a mutliplication table generator 
+start end
+5 10
