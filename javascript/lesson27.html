@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Example of Function in Javascript </title>
+</head>
+
+<body>
+     <h1 align="center">
+          Example of Function in Javascript
+     </h1>
+     <hr>
+
+
+     <script>
+          // 1st way 
+          //function function_name()
+          // {
+
+          // }
+
+          // let/var  function_name = function()
+          // {
+
+          // }
+
+          function greetings() {
+               document.write("Hello World this is function created using 1st way");
+          }
+
+          let hello = function () {
+               document.write("<br>Hello World this is function creatae using 2nd way");
+          }
+          let copy = hello;
+
+          let square = (number) => number * number;
+          
+          var answer = square(5);
+          console.log(answer);
+
+          greetings();
+          hello();
+     </script>
+</body>
+
+</html>

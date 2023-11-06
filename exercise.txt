@@ -38,5 +38,14 @@ Write a programe to create a toggle button
 
 Write a programe to create a result generator
 name , math , science , english , 
--> total , average 
-if total less than 150 color red else green 
+-> total , average
+if total less than 150 color red else green
+
+Write a programe to create a calc 
+->Addition
+->subtraction
+->mutliplication
+->division
+->max
+->min
+->equality ( === )
