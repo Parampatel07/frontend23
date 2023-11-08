@@ -49,3 +49,5 @@ Write a programe to create a calc
 ->max
 ->min
 ->equality ( === )
+
+Write a programe to findout wether the user is eligible for voting or not 

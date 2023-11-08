@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <title>Bootstrap demo</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+     <div class="container">
+          <div class="row">
+               <div class="col-8 offset-2 mt-4">
+                    <div class="card shadow mt-5">
+                         <div class="card-header h2 text-bg-warning">
+                              Example of OnSubmit Event
+                         </div>
+                         <div class="card-body">
+                              <form action="lesson10.html" method="post" onsubmit="return checkInput()">
+                                   <div class="form-group mt-2">
+                                        <label class="form-label">
+                                             Enter value of number 1 (less than 500 or greater 2000)
+                                        </label>
+                                        <input type="number" id="number1" class="form-control" name="number1"
+                                             placeholder="Enter value of number1">
+                                   </div>
+                                   <div class="form-group mt-2">
+                                        <label class="form-label">
+                                             Enter value of number 2 (less than 1000 or greater 5000)
+                                        </label>
+                                        <input type="number" id="number2" class="form-control" name="number2"
+                                             placeholder="Enter value of number2">
+                                   </div>
+                                   <div class="text-end mt-2">
+                                        <input type="submit" value="Submit" class="btn btn-success">
+                                        <input type="reset" value="Clear all" class="btn btn-danger">
+                                   </div>
+                              </form>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"></script>
+
+     <script>
+
+          let checkInput = function () {
+
+               let number1 = document.getElementById("number1").value;
+               let number2 = document.getElementById("number2").value;
+
+               console.log(`The value of number 1 is ${number1} and value of number 2 is ${number2}`);
+
+               if ((number1 <= 500 || number1 >= 2000) && (number2 <= 1000 || number2 >= 5000)) {
+                    return true;
+               }
+               else {
+                    return false;
+               }
+
+          }
+
+     </script>
+</body>
+
+</html>
