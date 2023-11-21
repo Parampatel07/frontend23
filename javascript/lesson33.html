@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+     <h1>
+          Example of Object using javascript
+     </h1>
+
+     <script>
+
+          var walk = function () {
+               console.log("I can walk");
+          }
+
+          var person = {
+               'name': 'Param Patel',
+               'age': 19,
+               'gender': true,
+               'talk': function talk() {
+                    console.log("I can talk");
+               },
+               'walk': walk,
+               "numbers": [10, 2030, 40, 50, 60, 5, 090,]
+          };
+          console.log(person);
+          console.log(person.name);
+          person.walk();
+
+
+          var student = new Object({
+               'name': 'Param',
+               'course': 'React',
+               'display': function () {
+                    console.log("name is " + this.name + ' course is ' + this.course);
+               }
+          });
+          var s1 = student;
+          console.log(s1.name);
+          s1.display();
+     </script>
+</body>
+
+</html>
