@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+
+<body>
+
+     <script>
+          class Person {
+               walk() {
+                    console.log("I can Walk ");
+               }
+               talk() {
+                    console.log("I can Talk ");
+               }
+          }
+
+          class Student extends Person {
+               read() {
+                    console.log("I can Read ");
+               }
+               write() {
+                    console.log("I can Write");
+               }
+          }
+
+          var s1 = new Student();
+          s1.read();
+          s1.write();
+          s1.walk();
+          s1.talk();
+          console.log("------------------------------");
+          var t1 = new Person();
+          t1.walk();
+          t1.talk();
+          // t1.read();
+          // t1.write();
+     </script>
+</body>
+
+</html>
