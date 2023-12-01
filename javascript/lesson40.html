@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <title>Bootstrap Page with Input</title>
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card shadow">
+                <div class="card-header text-bg-danger">
+                    <h5 class="card-title">Input Form</h5>
+                </div>
+                <div class="card-body">
+                    <form onsubmit="return AddKeyValue();">
+                        <div class="mb-3">
+                            <label for="keyName" class="form-label">Key Name:</label>
+                            <input type="text" class="form-control" id="keyname" name="keyName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="keyValue" class="form-label">Key Value:</label>
+                            <input type="text" class="form-control" id="keyvalue" name="keyValue" required>
+                        </div>
+                        <button type="submit" class="btn btn-danger">Submit</button>
+                        <button onclick="GetKeysValue();" type="button" class="btn btn-info">get key's value</button>
+                        <p>use console to check object and its property</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    //create empty object 
+    //var object-name = {} 
+    var student = {}; //global 
+    function AddKeyValue()
+    {
+        // alert("button clicked....");
+        //access input 
+        let keyname = document.getElementById('keyname').value;
+        let keyvalue = document.getElementById('keyvalue').value;
+        console.log(keyname,keyvalue);
+        //add these key and value into object
+        student[keyname] = keyvalue;
+        console.log(student);
+        document.getElementById("keyname").value = '';
+        document.getElementById("keyvalue").value = '';
+        return false;
+    }
+    //2nd method 
+    let GetKeysValue = function()
+    {
+        let keyname = document.getElementById('keyname').value; //local variable 
+        if(keyname === '')
+            alert("key name must be given");
+        else 
+        {
+            if(keyname in student)
+                alert(student[keyname]);
+            else 
+                alert("key does not exists");
+        }
+    }
+</script>
+</body>
+</html>

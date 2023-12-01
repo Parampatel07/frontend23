@@ -10,9 +10,9 @@
 
 <body>
 
-     <span id="message">
+     <div id="message">
           
-     </span>
+     </div>
 
      <script>
           // 10)Write a programe to findout Wether the user is eligible for voting or not (in h1 tag)
@@ -24,14 +24,14 @@
 
           if (age >= 18) {
                message = `<span style="color: green;">you are eligible </span>`
-               document.getElementById("message").innerHTML = message;
                console.log("you are eligible ");
           }
           else {
                message = `<span style="color: red;">you are not eligible </span>`
-               document.getElementById("message").innerHTML = message;
                console.log("You are not eligible ");
           }
+          document.getElementById("message").innerHTML = message;
+
      </script>
 </body>
 
