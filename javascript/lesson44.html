@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>for each loop</h1>
+    <p>for each loop in javascript is mainly used to process each and every value(element) in array</p>
+    <script>
+        var numbers = [10,20,30,40,50,60,70,80,90,100];
+        //findout square of each and every's value, we have array in array and also store it into another array 
+        // var square = []; //empty array
+        // for(let index=0;index<numbers.length;index++)
+        // {
+        //     console.log(index,numbers[index]); //1 20
+        //     let temp = numbers[index] * numbers[index];
+        //     square.push(temp); //temp has square and it is added end of array 
+        // }
+        var square = numbers.map(function(item){
+            console.log(item);
+            return item * item;
+        });
+        console.log(square);
+    </script>
+</body>
+</html>

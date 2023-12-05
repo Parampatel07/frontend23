@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>working with array</h1>
+    <ol id="output"></ol>
+    <script>
+        //create list 
+        var fruits = []; //empty array 
+        //let us add value at the end of array
+        fruits.push("orange");
+        fruits.push("banana");
+        fruits.push("apple");
+        //let us add value at the begining of array
+        fruits.unshift("graps");
+        fruits.unshift("pinapple");
+        console.log(fruits);
+        //sort array
+        fruits.sort(); //sort array in asecnding order 
+        console.log(fruits);
+        //get size of the array
+        let size = fruits.length; //how many elements array has 
+        console.log("size ",size);
+        //let us use loop on array
+        for(let index=0;index<size;index++)
+        {
+            document.getElementById("output").innerHTML+= `<li>${fruits[index]}</li>`
+        }
+    </script>
+</body>
+</html>

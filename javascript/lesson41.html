@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Binding Concept</h1>
+    <ul id="output">
+
+    </ul>
+    <script>
+        //create object 
+        var course = {
+            name : "MERN Stack",
+            duration : 150,
+            fees: 15000,
+            trainer : 'the easylearn academy',
+            display: function()
+            {
+                let temp = `<li>Name ${this.name}</li>
+                            <li>Duration ${this.duration}</li>
+                            <li>Fees ${this.fees}</li>
+                            <li>Trainer ${this.trainer}</li>`;
+                document.getElementById('output').innerHTML = temp;
+            }
+        }
+
+        //course.display();
+        // var display = course.display; //wrong way 
+        var display = course.display.bind(course);
+        display();
+    </script>
+</body>
+</html>
