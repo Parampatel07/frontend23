@@ -33,7 +33,10 @@
 
                             <!-- Add your additional content or actions here -->
                             <button type="submit" class="btn btn-primary">Create Cookie</button>
-                            <button type="button" class="btn btn-warning">fetch Cookie</button>
+                            <button type="button" onclick="FetchCookie();" class="btn btn-warning">fetch Cookie</button>
+                            <button type="button" onclick="DeleteCookie();" class="btn btn-danger">Delete cookie</button>
+                            <button type="button" onclick="window.print();" class="btn btn-info">Print</button>
+                            
                         </form>
                     </div>
                 </div>
@@ -54,6 +57,37 @@
             document.getElementById("keyname").value = "";
             document.getElementById("keyvalue").value = "";
             return false;
+        }
+        //create arrow function 
+        let FetchCookie = function() {
+            // alert("hi");
+            let keyname  = document.getElementById("keyname").value;
+            if(keyname === "")
+                alert("keyname must not be empty");
+            else 
+            {
+                let keyvalue = getCookie(keyname);
+                if(keyvalue === "")
+                    alert("key does not exists");
+                else 
+                    document.getElementById("keyvalue").value = keyvalue;
+            }
+        }
+        let DeleteCookie = () => {
+            let keyname = document.getElementById("keyname").value;
+            if(keyname === "")
+                alert("keyname must not be empty");
+            else 
+            {
+                let keyvalue = getCookie(keyname);
+                if(keyvalue === "")
+                    alert("key does not exists");
+                else 
+                {
+                    setCookie(keyname,"",-10);
+                    alert("cookie has been deleted successfully");
+                }
+            }
         }
     </script>
 </body>
