@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "app1": "^1.0.0",
+    "create-react-app": "^5.0.1"
+  }
+}
