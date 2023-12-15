@@ -1,0 +1,5 @@
+1) Create IPL 2022 point table using html table tag 
+2) Create list of various cousines normally offered in indian resturant. also add 5 dish name in each cousines. use list tag. 
+
+3) create bootstrap register page 
+4) create bootstrap change password page 
