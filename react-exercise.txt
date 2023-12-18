@@ -3,3 +3,14 @@
 
 3) create bootstrap register page 
 4) create bootstrap change password page 
+5) create bootstrap page that will display school one page website which should have functions 
+    Heading 
+    Banner (Slider/caresoul)
+    Introduction 
+    Stream
+6) Create marksheet that will display student name, 5 subject marks, total & average and grade.
+    if student have >85% display grade S
+    if student have >75% display grade A
+    if student have >65% display grade B
+    if student have >55% display grade C
+    if student have >45% display grade D

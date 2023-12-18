@@ -3,32 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-var num1 = 10;
-var num2 = 3;
-var output = (<div className='container'>
-    <div className='row'>
-        <div className='col-6 offset-3'>
-            <div className='card shadow'>
-                <div className='card-header text-bg-danger'>
-                    <div className='h3'>Login</div>
-                </div>
-                <div className='card-body'>
-                    <form>
-                        <div className='mb-3'>
-                            <label className='form-label' htmlFor=''>Email address</label>
-                            <input type='email' name='email' id='email' className='form-control' required />
-                        </div>
-                        <div className='mb-3'>
-                            <label className='form-label' htmlFor=''>Password</label>
-                            <input type='password' name='password' id='password' className='form-control' required />
-                        </div>
-                        <div>
-                            <input type='submit' className='btn btn-danger w-100' value='Login' />
-                        </div>
-                    </form>
+let Message = function()
+{
+   let today = new Date();
+   let CurrentHour = today.getHours(); //return hours of the day 
+   if(CurrentHour<12)
+        return (<h1>Good Morning</h1>)
+   else if(CurrentHour>=12 && CurrentHour<=17)
+        return (<h1>Good afternoon</h1>)
+   else 
+        return (<h1>Good Evening</h1>)}
+let Greeting = function()
+{
+    return (
+        <div className='container'>
+            <div className='row'>
+                <div className='col-12'>
+                    <Message />
                 </div>
             </div>
         </div>
-    </div>
-</div>)
-root.render(output);
+    )
+}
+root.render(<Greeting />);
