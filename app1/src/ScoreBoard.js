@@ -17,6 +17,7 @@ class ScoreBoard extends React.Component
                     <table className="table table-bordered table-striped" width='100%'>
                        
                         <Player name='Sachin Tendulkar' srno='1' />
+                        <Player name='Rohit sharma' srno='2' />
                        
                     </table>
                 </div>
