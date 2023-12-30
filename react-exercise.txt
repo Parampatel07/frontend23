@@ -15,3 +15,8 @@
     if student have >55% display grade C
     if student have >45% display grade D
 7) Create Class Component ScoreBoard which display 11 player score on screen. Each player should be represented by Player class (Class Component) provide option to add 1, 2, 3, 4, 6
+
+8) Create BMI calculator using class Component. 
+
+9) Create Area Calculator for cyliender 
+
