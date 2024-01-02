@@ -1,78 +1,44 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-class InterestCalculator extends React.Component {
-    constructor(props) {
-        super(props)
+class LifeCycle extends React.Component
+{
+    constructor(props)
+    {
+        super(props);
+        console.log('initilization phase');
         this.state = {
-            amount:0,
-            rate:0,
-            year:0,
-            interest:0.0
+            count:0
         }
     }
-    upeateAmount = (event) => {
-        this.setState({
-            amount: event.target.value
-        },()=>{
-            this.calculateInterest();
-        });
+    componentWillMount()
+    {
+        console.log('this is componentWillMount it is called before render method is called');
     }
-    updateRate = (event) => {
-        this.setState({
-            rate: event.target.value
-        },()=>{
-            this.calculateInterest();
-        });
+    componentDidMount()
+    {
+        console.log('this is componentDidMount it is called before render method is called');
     }
 
-    updateYear = (event) => {
+    updateCount = () => {
         this.setState({
-            year: event.target.value
-        },()=> {
-            this.calculateInterest();
+            count:this.state.count + 1
         });
     }
-
-    calculateInterest = () => {
-        this.setState({
-            interest: (this.state.amount * this.state.year * this.state.rate) / 100
-        })
-    } 
-    render() {
-        return (
-            <div className="container mt-5">
-                <div className="row">
-                    <div className="col-md-6 offset-md-3">
-                        <div className="card">
-                            <div className="card-body">
-                                <h2 className="card-title mb-4">Simple Interest Calculator</h2>
-                                <form>
-                                    <div className="mb-3">
-                                        <label htmlFor="amount" className="form-label">Amount</label>
-                                        <input type="number" className="form-control" id="amount" placeholder="Enter Amount" 
-                                        onBlur={this.upeateAmount}  />
-                                    </div>
-                                    <div className="mb-3">
-                                        <label htmlFor="rate" className="form-label">Rate</label>
-                                        <input type="number" className="form-control" id="rate" placeholder="Enter Rate"
-                                        onBlur={this.updateRate}  />
-                                    </div>
-                                    <div className="mb-3">
-                                        <label htmlFor="year" className="form-label">Year</label>
-                                        <input type="number" className="form-control" id="year" placeholder="Enter Year" 
-                                        onBlur={this.updateYear} />
-                                    </div>
-                                    <h3>Interest : {this.state.interest}</h3>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
+    render()
+    {
+        console.log('render method is called',this.state.count);
+        return(<div className='container'>
+            <div className='row'>
+                <div className='col-12'>
+                    <h1>App lifecycle concept</h1>
+                    <button type='button' onClick={() => this.updateCount()}>Increase count</button>
+                    <h3>Count = {this.state.count}</h3>
                 </div>
             </div>
-
-        );
+        </div>);
     }
-}
+
+}   
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<InterestCalculator />)
+root.render(<LifeCycle />)
