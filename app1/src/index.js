@@ -1,59 +1,47 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-class LoginControl extends React.Component {
+class Refrigrator extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLogin: false
-        };
+            fruits: this.props.fruits
+        }
     }
-
-    updateLogin = () => {
-        this.setState({
-            isLogin: !this.state.isLogin
+    DeleteFruit = (item) => {
+        // alert(item);
+        let temp = this.state.fruits.filter((current) =>{
+                if(current!=item)
+                    return current
         });
+
+        this.setState({
+            fruits:temp
+        })
     }
-    render() {
-        if (this.state.isLogin == false)
-            return (<a className='nav-link'><button onClick={this.updateLogin} className='btn btn-primary'>Login</button></a>);
-        else
-            return (<a className='nav-link'><button onClick={this.updateLogin} className='btn btn-danger'>Logout</button></a>);
+    render()
+    {
+        return(this.state.fruits.map((item) => {
+            return <div className='col-lg-3 mb-3'>
+                <div className='card shadow'>
+                    <div className='card-body d-flex justify-content-between'>
+                        <h3>{item}</h3>
+                        <span className='text-danger'>
+                            <i onClick={() => this.DeleteFruit(item)} className='fa fa-trash fa-2x '></i></span>
+                    </div>
+                </div>
+            </div>
+        }))
     }
-}
-function MessageBox(props) {
-    let messages = props.messages;
-    return <div>
-        {(messages >= 1) && <button className='btn btn-info'>Messages {messages} </button>}
-        {(messages == 0) && <button className='btn btn-warning'>No new messages</button>}
-    </div>;
 }
 function Page() {
+    var fruitNames = [
+        "Apple","Banana","Orange","Grapes", "Mango","Strawberry", "Pineapple", "Watermelon", "Kiwi", "Peach", "Pear", "Cherry", "Blueberry", "Raspberry", "Blackberry", "Plum", "Avocado", "Pomegranate", "Coconut", "Lemon"
+    ];
     return (
-        <div className='container-fluid bg-light shadow p-2'>
+        <div className='container'>
             <div className='row'>
-                <div className='col-12 d-flex justify-content-end'>
-                    <ul className='nav'>
-                        <li className='nav-item'>
-                            <a className='nav-link'>Home</a>
-                        </li>
-                        <li className='nav-item'>
-                            <a className='nav-link'>About us</a>
-                        </li>
-                        <li className='nav-item'>
-                            <a className='nav-link'>Products</a>
-                        </li>
-                        <li className='nav-item'>
-                            <a className='nav-link'>Contact us</a>
-                        </li>
-                        <li className='nav-item'>
-                            <a className='nav-link'><MessageBox messages='0' /></a>
-                        </li>
-                        <li className='nav-item'>
-                            <LoginControl />
-                        </li>
-                    </ul>
-                </div>
+                <Refrigrator fruits={fruitNames} />
             </div>
         </div>);
 }
