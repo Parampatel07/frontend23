@@ -4,6 +4,7 @@ import './index.css';
 class FilterExample extends React.Component {
     constructor(props) {
         super(props);
+        this.original = this.props.countries;
         this.state = {
             countries: this.props.countries
         }
@@ -16,12 +17,51 @@ class FilterExample extends React.Component {
                     <h5>{item.name}</h5>
                     <i className='fa fa-trash fa-2x' onClick={() => this.DeleteCountry(item)}></i>
                 </div>
+                <div className='card-footer'>
+                    {item.continent}
+                </div>
             </div>
         </div>)
     }
-    render() 
-    {
-        let blocks = this.state.countries.map((item,index) => this.DisplayCountry(item,index));
+    //arrow function 
+    onChangeInput = (event) => {
+        if (event.target.name == 'country_name') {
+            let countryName = event.target.value;
+            console.log(countryName);
+            this.setState({
+                [event.target.name]: event.target.value
+            });
+
+            if (countryName == '') {
+                this.setState({
+                    countries: this.original
+                });
+            }
+            else {
+                let temp = this.state.countries.filter((item) => {
+                    if (item.name.toLowerCase().includes(countryName) == true)
+                        return item;
+                });
+                this.setState({
+                    countries: temp
+                })
+            }
+        }
+        else {
+            var SelectedContinent = event.target.value.toLowerCase();
+            console.log(SelectedContinent,SelectedContinent.length);
+            let temp = this.original.filter((item) => {
+                console.log(item.continent.toLowerCase());
+                if (item.continent.toLowerCase().includes(SelectedContinent) == true)
+                    return item;
+            });
+            this.setState({
+                countries: temp
+            });
+        }
+    }
+    render() {
+        let blocks = this.state.countries.map((item, index) => this.DisplayCountry(item, index));
         return (<>
             <div className='container-fluid bg-light p-3'>
                 <div className='row'>
@@ -31,15 +71,15 @@ class FilterExample extends React.Component {
                                 <label className="visually-hidden" htmlFor="country_name">Country Name</label>
                                 <div className="input-group">
                                     <div className="input-group-text">@</div>
-                                    <input type="text" className="form-control" id="country_name" placeholder="Country Name" />
+                                    <input name='country_name' type="text" className="form-control" id="country_name" placeholder="Country Name" value={this.state.country_name} onChange={this.onChangeInput} />
                                 </div>
                             </div>
                             <div className="col-12">
                                 <label className="visually-hidden" htmlFor="inlineFormSelectPref">Continent</label>
-                                <select className="form-select" id="inlineFormSelectPref">
+                                <select name='continent' className="form-select" id="inlineFormSelectPref" onChange={this.onChangeInput}>
                                     <option selected>Continent</option>
                                     <option value='asia'>asia</option>
-                                    <option value='eurpoe'>europe</option>
+                                    <option value='Europe'>Europe</option>
                                 </select>
                             </div>
                         </form>
